@@ -4,6 +4,7 @@ export default function Dashboard() {
       style={{
         background: "#000814",
         minHeight: "100vh",
+        color: "white",
         padding: "40px",
         textAlign: "center",
       }}
@@ -12,40 +13,40 @@ export default function Dashboard() {
         style={{
           color: "#00d4ff",
           fontSize: "60px",
-          marginBottom: "40px",
+          marginBottom: "30px",
         }}
       >
         Dirección Ejecutiva
       </h1>
 
-      <div
+      <p style={{ fontSize: "24px" }}>
+        Gerente General — AUREXION
+      </p>
+
+      <img
+        src="/gerente.jpg"
+        alt="Gerente"
         style={{
-          background: "#001122",
-          border: "1px solid #00d4ff",
-          borderRadius: "20px",
-          padding: "30px",
-          boxShadow: "0 0 20px #00d4ff",
-          display: "inline-block",
+          width: "350px",
+          borderRadius: "15px",
+          marginTop: "20px",
+          boxShadow: "0 0 30px #00d4ff",
+        }}
+      />
+
+      <h2
+        style={{
+          color: "#00d4ff",
+          marginTop: "50px",
+          fontSize: "40px",
         }}
       >
-        <p style={{ color: "white", fontSize: "24px" }}>
-          Gerente General
-        </p>
+        Contacto Corporativo
+      </h2>
 
-        <p style={{ color: "#00d4ff" }}>
-          AUREXION CORPORATION
-        </p>
-
-        <img
-          src="/gerente.jpg"
-          alt="Gerente"
-          style={{
-            width: "350px",
-            borderRadius: "15px",
-            marginTop: "20px",
-          }}
-        />
-      </div>
+      <p style={{ fontSize: "22px" }}>
+        contacto@aurexion.com
+      </p>
     </div>
   );
 }
